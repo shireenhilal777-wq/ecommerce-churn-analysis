@@ -19,7 +19,7 @@ The Objective:
 To determine if customer demographics (Age, Income, Gender) and spending behavior could accurately predict customer churn.
 
 ## Key Technical Insights:
-- Feature Correlation: Initial EDA revealed a "weak correlation" across all primary features.  A heatmap analysis confirmed that no single factor—such as Annual Income or Spending Score—directly drives a customer to leave.
+- Feature Correlation: Initial EDA revealed a "weak correlation" across all primary features.  A heatmap analysis confirmed that no single factor—such as Annual Income or Spending Score directly drives a customer to leave.
 
 - Model Performance: A Decision Tree Classifier achieved 66.25% accuracy. While this provides a baseline, it performs similarly to the majority class baseline (69%), suggesting that churn in this dataset is likely driven by external factors not captured in the current variables.
 
