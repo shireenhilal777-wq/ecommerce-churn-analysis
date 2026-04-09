@@ -17,7 +17,8 @@ The objective is to analyze customer behavior (order frequency, tenure, and comp
 # Executive Summary: Churn Analysis Findings
 The Objective:
 To determine if customer demographics (Age, Income, Gender) and spending behavior could accurately predict customer churn.
-
+[View the Full Python Analysis Here]
+(notebooks/Churn_Analysis_Project.ipynb)
 ## Key Technical Insights:
 - Feature Correlation: Initial EDA revealed a "weak correlation" across all primary features.  A heatmap analysis confirmed that no single factor—such as Annual Income or Spending Score directly drives a customer to leave.
 
