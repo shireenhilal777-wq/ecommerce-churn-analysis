@@ -1,4 +1,4 @@
-# E-commerce Customer Churn Analysis
+# E-commerce Customer Churn Analysis by Shireen Hilal
 This project identifies why customers are leaving an e-commerce platform and predicts future churn using Python.
 
 ## The Goal
