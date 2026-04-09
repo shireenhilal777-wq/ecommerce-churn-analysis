@@ -13,3 +13,14 @@ The objective is to analyze customer behavior (order frequency, tenure, and comp
 - `data/`: Contains the raw dataset.
 - `notebooks/`: Exploratory Data Analysis (EDA) and Model building.
 - `visuals/`: Charts showing churn trends.
+
+## Executive Summary: Churn Analysis Findings
+The Objective:
+To determine if customer demographics (Age, Income, Gender) and spending behavior could accurately predict customer churn.
+
+Key Technical Insights:
+- Feature Correlation: Initial EDA revealed a "weak correlation" across all primary features.  A heatmap analysis confirmed that no single factor—such as Annual Income or Spending Score—directly drives a customer to leave.
+
+- Model Performance: A Decision Tree Classifier achieved 66.25% accuracy. While this provides a baseline, it performs similarly to the majority class baseline (69%), suggesting that churn in this dataset is likely driven by external factors not captured in the current variables.
+
+- Top Predictor: The model identified Membership Years as the most significant splitting factor, though its predictive power remains limited by the high variance in the data.
