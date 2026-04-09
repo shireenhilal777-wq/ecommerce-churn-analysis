@@ -1,34 +1,36 @@
 # E-commerce Customer Churn Analysis by Shireen Hilal
-This project identifies why customers are leaving an e-commerce platform and predicts future churn using Python.
+Данный проект направлен на выявление причин ухода клиентов с платформы электронной коммерции и прогнозирование будущего оттока с использованием Python.
 
-## The Goal
-The objective is to analyze customer behavior (order frequency, tenure, and complaints) to provide actionable insights for the marketing team.
+## Цель проекта
+Основная цель: проанализировать поведение клиентов (частоту заказов, длительность взаимодействия с платформой и наличие жалоб), чтобы предоставить практические рекомендации для маркетинговой команды
 
-## Tech Stack
-- **Language:** Python
-- **Libraries:** Pandas, Matplotlib, Seaborn, Scikit-learn
-- **Tools:** Jupyter Notebook / Google Colab
+## Технологический стек
+- **Язык программирования:** Python
+- **Библиотеки:** Pandas, Matplotlib, Seaborn, Scikit-learn
+- **Инструменты:** Jupyter Notebook / Google Colab
 
-## Project Structure
-- `data/`: Contains the raw dataset.
-- `notebooks/`: Exploratory Data Analysis (EDA) and Model building.
-- `visuals/`: Charts showing churn trends.
+## Структура проекта
+- `data/`: содержит исходные данные
+- `notebooks/`: разведочный анализ данных (EDA) и построение модели
+- `visuals/`: графики, отражающие динамику оттока
 
-# Executive Summary: Churn Analysis Findings
-The Objective:
-To determine if customer demographics (Age, Income, Gender) and spending behavior could accurately predict customer churn.
-### Project Files
-*  [View Static Notebook (GitHub)](notebooks/Churn_Analysis_Project.ipynb)
-*  [Run Interactive Notebook (Google Colab)](https://colab.research.google.com/drive/1oax6zCa4eDPC0OpnEioRZ1MNb6VVgM7C?usp=sharing)
+# Краткое резюме: результаты анализа оттока
 
-## Key Technical Insights:
-- Feature Correlation: Initial EDA revealed a "weak correlation" across all primary features.  A heatmap analysis confirmed that no single factor—such as Annual Income or Spending Score directly drives a customer to leave.
+### Файлы проекта
+*  [Просмотр ноутбука (GitHub)](notebooks/Churn_Analysis_Project.ipynb)
+*  [Запуск интерактивного ноутбука (Google Colab)](https://colab.research.google.com/drive/1oax6zCa4eDPC0OpnEioRZ1MNb6VVgM7C?usp=sharing)
 
-- Model Performance: A Decision Tree Classifier achieved 66.25% accuracy. While this provides a baseline, it performs similarly to the majority class baseline (69%), suggesting that churn in this dataset is likely driven by external factors not captured in the current variables.
+## Ключевые технические выводы:
+- Корреляция признаков: Первичный анализ (EDA) показал слабую корреляцию между основными признаками. Тепловая карта подтвердила, что ни один отдельный фактор например, годовой доход или уровень расходов, не оказывает решающего влияния на уход клиента.
 
-- Top Predictor: The model identified Membership Years as the most significant splitting factor, though its predictive power remains limited by the high variance in the data.
+- Качество модели: Модель Decision Tree Classifier достигла точности 66.25%. Это сопоставимо с базовой моделью (69%), что указывает на то, что отток в данном наборе данных, вероятно, обусловлен внешними факторами, не учтёнными в текущих переменных.
 
-## Strategic Recommendations:
-- Data Expansion: Since demographic data proved inconclusive, the company should begin collecting behavioral data, such as customer service interaction frequency, app session length, and last login date.
- 
-- Unbiased Churn: Because churn is uniform across all age groups and income levels, retention marketing should be broad-based rather than targeted at a specific demographic segment.
+- Ключевой предиктор: Наиболее значимым фактором оказалась длительность членства (Membership Years), однако её предсказательная сила ограничена высокой вариативностью данных.
+
+## Стратегические рекомендации:
+1. Расширение данных: Поскольку демографические данные не дали чётких результатов, рекомендуется начать сбор поведенческих данных, таких как:
+- частота взаимодействия с поддержкой
+- длительность сессий в приложении
+- дата последнего входа
+  
+2. Отсутствие демографической зависимости оттока: Поскольку отток равномерно распределён по возрастным и доходным группам, маркетинговые стратегии удержания должны быть универсальными, а не ориентированными на конкретные сегменты.
